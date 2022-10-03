@@ -36,7 +36,8 @@ class Login:
         # Button
         forgot = Button(Frame_login, text="forgot password", bd=0, font=("Goudy old style", 10,), fg="#6162FF", bg="white").place(x=90, y= 280)
         submit = Button(Frame_login,command=self.check_function, text="Login", font=("Goudy old style", 15), bg="#6162FF", fg="white").place(x=90, y= 320, width=180, height=40)
-
+    
+    # function
     def check_function(self):
         if self.username.get()=="" or self.password.get()=="":
             messagebox.showerror("Error", "All fields are requred", parent = self.root)
